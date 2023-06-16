@@ -31,7 +31,6 @@ div.logo{
     }
 }
 
-
 div.teaser{
     box-sizing: border-box;
     display: flex;
@@ -56,6 +55,21 @@ div.teaser{
             left: 0;
             right: 0;
         }
+        #audioBtn{
+            position: absolute;
+            top: 0;
+            z-index: 12;
+            cursor: pointer; 
+            border: 2px solid #EA4C6F;
+            border-radius: 50%;
+            background-color: transparent;
+            width: 35px;
+            height: 35px;
+            padding: 4px;
+            top: 1em;
+            left: 1em; 
+        }
+
     }
 }
 
@@ -221,6 +235,23 @@ a.reseaux{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    div.logo{
+        img{
+            width: 10em;
+        }
+    }
+    div.teaser{
+        div.img{
+            #audioBtn{
+                left: 93%;
+                top: 2em;
+                width: 45px;
+                height: 45px;
+                border: 3px solid #EA4C6F;
+            }
+        }
+    }
+
     .footer:hover #facebook{
         transform: translateX(3.5em);
         transition: ease-in-out .9s;

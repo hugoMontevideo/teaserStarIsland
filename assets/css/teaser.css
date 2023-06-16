@@ -53,6 +53,20 @@ div.teaser div.img .layout-img {
   left: 0;
   right: 0;
 }
+div.teaser div.img #audioBtn {
+  position: absolute;
+  top: 0;
+  z-index: 12;
+  cursor: pointer;
+  border: 2px solid #EA4C6F;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  padding: 4px;
+  top: 1em;
+  left: 1em;
+}
 
 div.footer {
   position: fixed;
@@ -157,7 +171,7 @@ a.reseaux img {
 
 .information {
   position: fixed;
-  top: 30%;
+  top: 40%;
   width: 50%;
   padding: 0 1em;
   font-family: arial;
@@ -169,6 +183,16 @@ a.reseaux img {
 }
 
 @media (min-width: 768px) {
+  div.logo img {
+    width: 10em;
+  }
+  div.teaser div.img #audioBtn {
+    left: 93%;
+    top: 2em;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #EA4C6F;
+  }
   .footer:hover #facebook {
     transform: translateX(3.5em);
     transition: ease-in-out 0.9s;
@@ -244,9 +268,12 @@ a.reseaux img {
   }
   .information {
     position: absolute;
-    top: 15%;
+    top: 30%;
     margin: 0 0 0 15%;
-    width: 600px;
-    font-size: 1.5em;
+    max-width: 500px;
+    font-size: 1.7em;
+  }
+  .information span {
+    color: rgba(255, 255, 255, 0.4392156863);
   }
 }/*# sourceMappingURL=teaser.css.map */
