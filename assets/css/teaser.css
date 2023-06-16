@@ -245,9 +245,8 @@ a.reseaux img {
   .information {
     position: absolute;
     top: 20%;
-    margin: 0 auto;
+    margin: 0 0 0 15%;
     max-width: 500px;
     font-size: 1.7em;
-    padding: 0 0 0 4em;
   }
 }/*# sourceMappingURL=teaser.css.map */
